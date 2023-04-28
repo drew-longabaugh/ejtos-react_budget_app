@@ -86,7 +86,7 @@ const initialState = {
         { id: "Human Resource", name: 'Human Resource', cost: 40 },
         { id: "IT", name: 'IT', cost: 500 },
     ],
-    currency: '£'
+    currency: {Currency}
     
 };
 
@@ -120,4 +120,4 @@ export const AppProvider = (props) => {
             {props.children}
         </AppContext.Provider>
     );
-};
+}
