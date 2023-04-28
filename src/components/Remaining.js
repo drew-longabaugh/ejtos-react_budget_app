@@ -21,7 +21,7 @@ const Remaining = () => {
 
   return (
     <div className="alert alert-light">
-      <span>Remaining: £{remaining}</span>
+      <span>Remaining: {Currency}{remaining}</span>
     </div>
   );
 };
