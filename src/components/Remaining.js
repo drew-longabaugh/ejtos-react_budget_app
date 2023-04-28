@@ -3,7 +3,7 @@ import { AppContext } from '../context/AppContext';
 import Budget from '../components/Budget';
 
 const Remaining = () => {
-  const { expenses, budget } = useContext(AppContext);
+  const { expenses, budget, Currency } = useContext(AppContext);
   const [setBudget] = useState('');
   const totalExpenses = expenses.reduce((total, item) => {
     return total + item.cost;
@@ -26,4 +26,4 @@ const Remaining = () => {
   );
 };
 
-export default Remaining;
+export default Remaining
