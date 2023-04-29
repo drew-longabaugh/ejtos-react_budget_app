@@ -14,14 +14,15 @@ const Currency = () => {
     <div className='alert alert-secondary currency-container'>
     Currency {
       <select name="Currency" id="Currency" onChange={event=>changeCurrency(event.target.value)}>
-        <option value="$ Dollar">$ Dollar</option>
-        <option value="£ Pound">£ Pound</option>
-        <option value="€ Euro">€ Euro</option>
-        <option value="₹ Ruppee">₹ Ruppee</option>
+        <option value="">Choose currency</option>
+        <option value="$">$ Dollar</option>
+        <option value="£">£ Pound</option>
+        <option value="€">€ Euro</option>
+        <option value="₹">₹ Ruppee</option>
       </select>
         }	
     </div>
     );
 };
 
-export default Currency;
+export default Currency
